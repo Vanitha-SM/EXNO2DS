@@ -25,6 +25,10 @@ STEP 8: Use heatmap method of representation to show relationships between two v
 ## CODING AND OUTPUT:
 
 ```
+Name: Vanitha S
+Register Number: 212222100057
+```
+```
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -40,12 +44,20 @@ df.info()
 ```
 ![Screenshot 2024-03-15 094457](https://github.com/Vanitha-SM/EXNO2DS/assets/119557985/5cd24cf1-5ebe-4037-99f9-634c1d15ceac)
 
+```
+df.shape
+```
 ![Screenshot 2024-03-15 094625](https://github.com/Vanitha-SM/EXNO2DS/assets/119557985/aeb29c85-fb55-4ddc-a4d3-1062e43d44c0)
 
+```
+df.nunique()
+```
 ![Screenshot 2024-03-15 094708](https://github.com/Vanitha-SM/EXNO2DS/assets/119557985/0851cc7a-aa10-450d-a7a3-703de236c564)
 
 ```
-
+df["Survived"].value_counts()
+per=(df["Survived"].value_counts()/df.shape[0]*100).round(2)
+per
 ```
 ![Screenshot 2024-03-15 095023](https://github.com/Vanitha-SM/EXNO2DS/assets/119557985/cc1261e3-4a01-48a4-a08d-ddac63b1f660)
 
@@ -112,5 +124,6 @@ sns.pairplot(df)
 
 ![image](https://github.com/Vanitha-SM/EXNO2DS/assets/119557985/605ceb6d-007d-45f3-8c14-6de3d2ebe60d)
 
-# RESULT
-        <<INCLUDE YOUR RESULT HERE>>
+# RESULT:
+Thus,Data Analyzing of the given dataset was successful.
+       
